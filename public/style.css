@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.result-active {
+  display: block !important;
+}
+
+.result-active-grid {
+  display: grid !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F5F5F5;
+}
+body .container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+body .container .youtube-channel {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+body .container .youtube-channel h1 {
+  color: #1B4965;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+body .container .youtube-channel h1 span {
+  color: #5FA8D3;
+}
+body .container .youtube-channel i {
+  font-size: 36px;
+  color: #1B4965;
+}
+body .container .searchInput {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+body .container .searchInput input {
+  outline: none;
+  width: 290px;
+  height: 57.12px;
+  border: 3px solid #1B4965;
+  font-size: 20px;
+}
+body .container .searchInput input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #929292;
+}
+body .container .searchInput input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #929292;
+}
+body .container .searchInput input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #929292;
+}
+body .container .searchInput input[type=text] {
+  padding-left: 20px;
+}
+body .container .searchInput button {
+  width: 60px;
+  height: 57.12px;
+  left: 313px;
+  background: #5FA8D3;
+  border: 3px solid #1B4965;
+}
+body .container .searchInput button i {
+  font-size: 20px;
+  color: white;
+}
+body .container .video-container {
+  width: 90%;
+  margin: 20px auto;
+  display: none;
+}
+body .container .video-container h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #1B4965;
+}
+body .container .video-container .video img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+body .container .video-container .video .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282828;
+}
+body .container .video-container .video .channel-title {
+  color: rgb(165, 156, 156);
+  font-size: 10px;
+}
+body .container .video-container .video .publish-time {
+  color: rgb(165, 156, 156);
+  font-size: 10px;
+}
+body .container .no-result-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  display: none;
+}
+body .container .no-result-container h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F5F5F5;
+  }
+  body .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  body .container .youtube-channel {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+  }
+  body .container .youtube-channel h1 {
+    color: #1B4965;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  body .container .youtube-channel h1 span {
+    color: #5FA8D3;
+  }
+  body .container .youtube-channel i {
+    font-size: 36px;
+    color: #1B4965;
+  }
+  body .container .searchInput {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .container .searchInput input {
+    outline: none;
+    width: 290px;
+    height: 57.12px;
+    border: 3px solid #1B4965;
+    font-size: 20px;
+  }
+  body .container .searchInput input::-moz-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #929292;
+  }
+  body .container .searchInput input:-ms-input-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #929292;
+  }
+  body .container .searchInput input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #929292;
+  }
+  body .container .searchInput input[type=text] {
+    padding-left: 20px;
+  }
+  body .container .searchInput button {
+    width: 60px;
+    height: 57.12px;
+    left: 313px;
+    background: #5FA8D3;
+    border: 3px solid #1B4965;
+  }
+  body .container .searchInput button i {
+    font-size: 20px;
+    color: white;
+  }
+  body .container .video-container {
+    width: 90%;
+    margin: 50px auto;
+    padding-top: 50px;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    position: relative;
+  }
+  body .container .video-container h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #1B4965;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body .container .video-container .video img {
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  body .container .video-container .video .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #282828;
+  }
+  body .container .video-container .video .channel-title {
+    color: rgb(165, 156, 156);
+    font-size: 10px;
+  }
+  body .container .video-container .video .publish-time {
+    width: 40%;
+    color: rgb(165, 156, 156);
+    font-size: 10px;
+  }
+  body .container .no-result-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+  }
+  body .container .no-result-container h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F5F5F5;
+  }
+  body .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  body .container .youtube-channel {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: center;
+  }
+  body .container .youtube-channel h1 {
+    color: #1B4965;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  body .container .youtube-channel h1 span {
+    color: #5FA8D3;
+  }
+  body .container .youtube-channel i {
+    font-size: 36px;
+    color: #1B4965;
+  }
+  body .container .searchInput {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body .container .searchInput input {
+    outline: none;
+    width: 290px;
+    height: 57.12px;
+    border: 3px solid #1B4965;
+    font-size: 20px;
+  }
+  body .container .searchInput input::-moz-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #929292;
+  }
+  body .container .searchInput input:-ms-input-placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #929292;
+  }
+  body .container .searchInput input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #929292;
+  }
+  body .container .searchInput input[type=text] {
+    padding-left: 20px;
+  }
+  body .container .searchInput button {
+    width: 60px;
+    height: 57.12px;
+    left: 313px;
+    background: #5FA8D3;
+    border: 3px solid #1B4965;
+  }
+  body .container .searchInput button i {
+    font-size: 20px;
+    color: white;
+  }
+  body .container .video-container {
+    width: 90%;
+    margin: 50px auto;
+    padding-top: 50px;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    position: relative;
+  }
+  body .container .video-container h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #1B4965;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body .container .video-container .video img {
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  body .container .video-container .video .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #282828;
+  }
+  body .container .video-container .video .channel-title {
+    color: rgb(165, 156, 156);
+    font-size: 10px;
+  }
+  body .container .video-container .video .publish-time {
+    width: 40%;
+    color: rgb(165, 156, 156);
+    font-size: 10px;
+  }
+  body .container .no-result-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    display: none;
+  }
+  body .container .no-result-container h2 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
