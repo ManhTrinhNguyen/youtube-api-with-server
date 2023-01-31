@@ -5,10 +5,10 @@ $(document).ready(() => {
     // Fetch Data
  
     const fetchData = () => {
-        
-         let query = $("#searchInput").val()
+  
          const data = {
-            query : query, 
+            query :  $("#searchInput").val(), 
+            channelId : $("#channel-option").val()
         }
          //const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=${apiKey}&channelId=UCqZQlzSHbVJrwrn5XvzrzcA&maxResults=6&q=${query}`
          
